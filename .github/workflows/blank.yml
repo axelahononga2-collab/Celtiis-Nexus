@@ -1,0 +1,112 @@
+# This is a basic work<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projet Celtiis Nexus</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <h1>Projet Celtiis Nexus</h1>
+    <p>Transformer les Télécoms Béninoises avec Sécurité, Innovation et Impact Client</p>
+  </header>
+
+  <main>
+    <!-- Section A -->
+    <section class="section" id="architecture">
+      <h2>A. Architecture Sécure Renforcée</h2>
+      <ul>
+        <li><strong>Zéro-Trust Architecture :</strong> Implémentation complète inspirée des mesures post-cyberattaque de T-Mobile.</li>
+        <li><strong>Authentification biométrique :</strong> Face ID, Touch ID et reconnaissance d'empreintes digitales.</li>
+        <li><strong>Tests de sécurité automatisés :</strong> IA similaire à celle de China Mobile pour tests et formations personnalisées.</li>
+      </ul>
+    </section>
+
+    <!-- Section B -->
+    <section class="section" id="innovation">
+      <h2>B. Innovation Technologique</h2>
+      <ul>
+        <li><strong>Réseau hybride terrestre-satellite :</strong> Infrastructure redondante évitant la dépendance aux câbles sous-marins.</li>
+        <li><strong>Déploiement 5G/6G :</strong> Couverture prioritaire en zone rurale avec normes RCD et SHAKEN.</li>
+        <li><strong>Centre de gestion réseau IA :</strong> Maintenance prédictive, optimisation du trafic et détection proactive des pannes.</li>
+      </ul>
+    </section>
+
+    <!-- Section C -->
+    <section class="section" id="services">
+      <h2>C. Services Client Transformés</h2>
+      <ul>
+        <li><strong>Assistant virtuel multilingue :</strong> Chatbot IA formé sur les dialectes locaux pour assistance 24/7.</li>
+        <li><strong>Mode protection famille :</strong> Restrictions renforcées et gestion de contenu pour jeunes utilisateurs.</li>
+        <li><strong>Plateforme collaborative :</strong> Espace client avec géolocalisation automatique et suivi en temps réel.</li>
+      </ul>
+    </section>
+
+    <!-- Section D -->
+    <section class="section" id="securite">
+      <h2>D. Sécurité Avancée</h2>
+      <ul>
+        <li><strong>Conformité aux normes 2024 :</strong> Respect strict des nouvelles règles de cybersécurité télécom.</li>
+        <li><strong>Détection de fraude IA :</strong> Inspiré des initiatives China Mobile/China Telecom de mars.</li>
+        <li><strong>Sécurité renforcée pour systèmes critiques :</strong> Gestion des risques conforme aux standards internationaux.</li>
+      </ul>
+    </section>
+
+    <!-- Feuille de Route -->
+    <section class="section roadmap">
+      <h2>IV. Feuille de Route 2024–2025</h2>
+      <ul>
+        <li><strong>Q2 2024 :</strong> Lancement de la phase pilote du réseau hybride terrestre-satellite.</li>
+        <li><strong>Q3 2024 :</strong> Intégration de l’authentification biométrique dans les applications mobiles.</li>
+        <li><strong>Q4 2024 :</strong> Début du déploiement 5G dans les zones rurales prioritaires.</li>
+        <li><strong>Q1 2025 :</strong> Mise en place du centre de gestion IA et du chatbot multilingue.</li>
+        <li><strong>Q2 2025 :</strong> Audit de conformité et déploiement généralisé des mesures ZTA.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Celtiis Nexus – Tous droits réservés</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>flow to help you get started with Actions
+
+name: CI
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the "main" branch
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v4
+
+      # Runs a single command using the runners shell
+      - name: Run a one-line script
+        run: echo Hello, world!
+
+      # Runs a set of commands using the runners shell
+      - name: Run a multi-line script
+        run: |
+          echo Add other actions to build,
+          echo test, and deploy your project.
